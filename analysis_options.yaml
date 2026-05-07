@@ -1,0 +1,6 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+linter:
+  rules:
+    # Apps don't expose a public API, so doc comments aren't required.
+    public_member_api_docs: false

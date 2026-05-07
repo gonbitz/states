@@ -54,7 +54,7 @@ class TodoList extends StatelessWidget {
   }
 }
 
-class TodoInputBar extends StatelessWidget {
+class TodoInputBar extends StatefulWidget {
   const TodoInputBar({
     required this.controller,
     required this.onSubmit,
@@ -67,6 +67,24 @@ class TodoInputBar extends StatelessWidget {
   final Color accentColor;
 
   @override
+  State<TodoInputBar> createState() => _TodoInputBarState();
+}
+
+class _TodoInputBarState extends State<TodoInputBar> {
+  final _focusNode = FocusNode();
+
+  @override
+  void dispose() {
+    _focusNode.dispose();
+    super.dispose();
+  }
+
+  void _handleSubmit() {
+    widget.onSubmit();
+    _focusNode.requestFocus();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
@@ -75,8 +93,9 @@ class TodoInputBar extends StatelessWidget {
           children: [
             Expanded(
               child: TextField(
-                controller: controller,
-                onSubmitted: (_) => onSubmit(),
+                focusNode: _focusNode,
+                controller: widget.controller,
+                onSubmitted: (_) => _handleSubmit(),
                 decoration: InputDecoration(
                   hintText: 'Nueva tarea...',
                   border: OutlineInputBorder(
@@ -91,8 +110,10 @@ class TodoInputBar extends StatelessWidget {
             ),
             const SizedBox(width: 8),
             FilledButton(
-              onPressed: onSubmit,
-              style: FilledButton.styleFrom(backgroundColor: accentColor),
+              onPressed: _handleSubmit,
+              style: FilledButton.styleFrom(
+                backgroundColor: widget.accentColor,
+              ),
               child: const Icon(Icons.add),
             ),
           ],

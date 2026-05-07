@@ -30,5 +30,6 @@ class TodoNotifier extends Notifier<TodoState> {
   }
 }
 
-final todoNotifierProvider =
-    NotifierProvider<TodoNotifier, TodoState>(TodoNotifier.new);
+final todoNotifierProvider = NotifierProvider<TodoNotifier, TodoState>(
+  TodoNotifier.new,
+);

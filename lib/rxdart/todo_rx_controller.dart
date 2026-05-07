@@ -21,9 +21,7 @@ class TodoRxController {
 
   void remove(String id) {
     _subject.add(
-      current.copyWith(
-        todos: current.todos.where((t) => t.id != id).toList(),
-      ),
+      current.copyWith(todos: current.todos.where((t) => t.id != id).toList()),
     );
   }
 

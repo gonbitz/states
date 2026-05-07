@@ -17,9 +17,7 @@ class TodoCubit extends Cubit<TodoState> {
   }
 
   void remove(String id) {
-    emit(state.copyWith(
-      todos: state.todos.where((t) => t.id != id).toList(),
-    ));
+    emit(state.copyWith(todos: state.todos.where((t) => t.id != id).toList()));
   }
 
   void toggle(String id) {

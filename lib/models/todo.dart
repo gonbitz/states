@@ -9,12 +9,9 @@ class Todo extends Equatable {
   final String text;
   final bool done;
 
+  Todo copyWith({String? id, String? text, bool? done}) =>
+      Todo(id: id ?? this.id, text: text ?? this.text, done: done ?? this.done);
+
   @override
   List<Object> get props => [id, text, done];
-
-  Todo copyWith({String? id, String? text, bool? done}) => Todo(
-        id: id ?? this.id,
-        text: text ?? this.text,
-        done: done ?? this.done,
-      );
 }

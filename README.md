@@ -1,5 +1,7 @@
 # Flutter State Management Playground
 
+🌐 **[Live demo](https://gonbitz.github.io/states/)**
+
 ![App screenshot](img/img.png)
 
 A hands-on comparison of **7 state management approaches** in Flutter, all solving the same Todo app problem. Each approach lives in its own isolated page so you can open the code side-by-side and compare how each one handles state changes, rebuilds, and lifecycle.

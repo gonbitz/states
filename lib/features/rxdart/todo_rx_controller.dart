@@ -1,6 +1,6 @@
 import 'package:rxdart/rxdart.dart';
-import 'package:states/cubit/todo_state.dart';
-import 'package:states/models/todo.dart';
+import 'package:states/core/models/todo.dart';
+import 'package:states/features/cubit/todo_state.dart';
 
 class TodoRxController {
   final _subject = BehaviorSubject<TodoState>.seeded(const TodoState());

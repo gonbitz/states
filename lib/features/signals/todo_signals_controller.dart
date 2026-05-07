@@ -1,5 +1,5 @@
 import 'package:signals_flutter/signals_flutter.dart';
-import 'package:states/models/todo.dart';
+import 'package:states/core/models/todo.dart';
 
 class TodoSignalsController {
   final todos = signal<List<Todo>>([]);

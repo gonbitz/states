@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:states/models/todo.dart';
+import 'package:states/core/models/todo.dart';
 
 class TodoState extends Equatable {
   const TodoState({this.todos = const []});

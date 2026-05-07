@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:states/pages/change_notifier_page.dart';
-import 'package:states/pages/cubit_page.dart';
-import 'package:states/pages/riverpod_page.dart';
-import 'package:states/pages/rxdart_page.dart';
-import 'package:states/pages/set_state_page.dart';
-import 'package:states/pages/signals_page.dart';
-import 'package:states/pages/value_notifier_page.dart';
+import 'package:states/features/change_notifier/change_notifier_page.dart';
+import 'package:states/features/cubit/cubit_page.dart';
+import 'package:states/features/riverpod/riverpod_page.dart';
+import 'package:states/features/rxdart/rxdart_page.dart';
+import 'package:states/features/set_state/set_state_page.dart';
+import 'package:states/features/signals/signals_page.dart';
+import 'package:states/features/value_notifier/value_notifier_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

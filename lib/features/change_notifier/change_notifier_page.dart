@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:states/change_notifier/todo_change_notifier.dart';
-import 'package:states/widgets/todo_widgets.dart';
+import 'package:states/core/widgets/todo_widgets.dart';
+import 'package:states/features/change_notifier/todo_change_notifier.dart';
 
 class ChangeNotifierPage extends StatelessWidget {
   const ChangeNotifierPage({super.key});

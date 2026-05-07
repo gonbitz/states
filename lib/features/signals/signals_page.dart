@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:signals_flutter/signals_flutter.dart';
-import 'package:states/signals/todo_signals_controller.dart';
-import 'package:states/widgets/todo_widgets.dart';
+import 'package:states/core/widgets/todo_widgets.dart';
+import 'package:states/features/signals/todo_signals_controller.dart';
 
 class SignalsPage extends StatefulWidget {
   const SignalsPage({super.key});

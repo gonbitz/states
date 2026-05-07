@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:states/models/todo.dart';
-import 'package:states/widgets/todo_widgets.dart';
+import 'package:states/core/models/todo.dart';
+import 'package:states/core/widgets/todo_widgets.dart';
 
 class SetStatePage extends StatefulWidget {
   const SetStatePage({super.key});

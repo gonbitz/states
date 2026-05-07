@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:states/riverpod/todo_notifier.dart';
-import 'package:states/widgets/todo_widgets.dart';
+import 'package:states/core/widgets/todo_widgets.dart';
+import 'package:states/features/riverpod/todo_notifier.dart';
 
 class RiverpodPage extends ConsumerStatefulWidget {
   const RiverpodPage({super.key});

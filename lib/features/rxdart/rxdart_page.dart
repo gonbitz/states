@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:states/cubit/todo_state.dart';
-import 'package:states/rxdart/todo_rx_controller.dart';
-import 'package:states/widgets/todo_widgets.dart';
+import 'package:states/core/widgets/todo_widgets.dart';
+import 'package:states/features/cubit/todo_state.dart';
+import 'package:states/features/rxdart/todo_rx_controller.dart';
 
 class RxDartPage extends StatefulWidget {
   const RxDartPage({super.key});

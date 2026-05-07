@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:states/cubit/todo_state.dart';
-import 'package:states/models/todo.dart';
+import 'package:states/core/models/todo.dart';
+import 'package:states/features/cubit/todo_state.dart';
 
 class TodoValueNotifier extends ValueNotifier<TodoState> {
   TodoValueNotifier() : super(const TodoState());

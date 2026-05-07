@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:states/cubit/todo_cubit.dart';
-import 'package:states/cubit/todo_state.dart';
-import 'package:states/widgets/todo_widgets.dart';
+import 'package:states/core/widgets/todo_widgets.dart';
+import 'package:states/features/cubit/todo_cubit.dart';
+import 'package:states/features/cubit/todo_state.dart';
 
 class CubitPage extends StatelessWidget {
   const CubitPage({super.key});

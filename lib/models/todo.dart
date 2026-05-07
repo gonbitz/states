@@ -1,12 +1,16 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 
 @immutable
-class Todo {
+class Todo extends Equatable {
   const Todo({required this.id, required this.text, this.done = false});
 
   final String id;
   final String text;
   final bool done;
+
+  @override
+  List<Object> get props => [id, text, done];
 
   Todo copyWith({String? id, String? text, bool? done}) => Todo(
         id: id ?? this.id,

@@ -10,11 +10,15 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.8
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
   flutter_bloc: ^9.0.0
+  flutter_riverpod: ^2.6.1
   http: ^1.2.0
+  provider: ^6.1.2
   rxdart: ^0.28.0
+  signals_flutter: ^5.5.0
 
 dev_dependencies:
   flutter_test:

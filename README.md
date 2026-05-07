@@ -78,9 +78,9 @@ flutter run
 
 ```yaml
 flutter_bloc: ^9.0.0
-flutter_riverpod: ^2.6.1
+flutter_riverpod: ^3.3.1
 provider: ^6.1.2
 rxdart: ^0.28.0
-signals_flutter: ^5.5.0
+signals_flutter: ^6.3.0
 equatable: ^2.0.5
 ```

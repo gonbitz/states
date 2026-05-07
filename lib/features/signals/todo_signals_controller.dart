@@ -2,7 +2,7 @@ import 'package:signals_flutter/signals_flutter.dart';
 import 'package:states/core/models/todo.dart';
 
 class TodoSignalsController {
-  final todos = signal<List<Todo>>([]);
+  final Signal<List<Todo>> todos = signal<List<Todo>>([]);
 
   void add(String text) {
     todos.value = [

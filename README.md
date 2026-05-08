@@ -30,35 +30,41 @@ A hands-on comparison of **7 state management approaches** in Flutter, all solvi
 
 ## Project structure
 
+Feature-first layout: each state management approach owns its page and its controller in the same folder.
+
 ```
 lib/
-├── models/
-│   └── todo.dart                       # Shared Todo model (Equatable)
-├── cubit/
-│   ├── todo_state.dart                 # Shared TodoState (Equatable)
-│   ├── todo_cubit.dart
-│   └── simple_bloc_observer.dart       # Logs every emit to console
-├── change_notifier/
-│   └── todo_change_notifier.dart
-├── rxdart/
-│   └── todo_rx_controller.dart
-├── value_notifier/
-│   └── todo_value_notifier.dart
-├── riverpod/
-│   └── todo_notifier.dart
-├── signals/
-│   └── todo_signals_controller.dart
-├── pages/
-│   ├── home_page.dart                  # Entry point — list of all approaches
-│   ├── set_state_page.dart
-│   ├── value_notifier_page.dart
-│   ├── change_notifier_page.dart
-│   ├── rxdart_page.dart
-│   ├── cubit_page.dart
-│   ├── riverpod_page.dart
-│   └── signals_page.dart
-└── widgets/
-    └── todo_widgets.dart               # Shared UI components
+├── core/
+│   ├── models/
+│   │   └── todo.dart                       # Shared Todo model (Equatable)
+│   └── widgets/
+│       └── todo_widgets.dart               # Shared UI components
+├── features/
+│   ├── set_state/
+│   │   └── set_state_page.dart
+│   ├── value_notifier/
+│   │   ├── todo_value_notifier.dart
+│   │   └── value_notifier_page.dart
+│   ├── change_notifier/
+│   │   ├── todo_change_notifier.dart
+│   │   └── change_notifier_page.dart
+│   ├── rxdart/
+│   │   ├── todo_rx_controller.dart
+│   │   └── rxdart_page.dart
+│   ├── cubit/
+│   │   ├── todo_state.dart                 # Immutable state (Equatable)
+│   │   ├── todo_cubit.dart
+│   │   ├── simple_bloc_observer.dart       # Logs every emit to console
+│   │   └── cubit_page.dart
+│   ├── riverpod/
+│   │   ├── todo_notifier.dart
+│   │   └── riverpod_page.dart
+│   └── signals/
+│       ├── todo_signals_controller.dart
+│       └── signals_page.dart
+├── home/
+│   └── home_page.dart                      # Entry point — list of all approaches
+└── main.dart
 ```
 
 ## Notable implementation details
